@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Poller+One&display=swap");
 
-img {
-  align-self: center;
-}
-
-
-
-
 @font-face {
   font-family: "SF Distant Galaxy";
   src: url("SFDistantGalaxy.ttf") format("truetype");
@@ -14,22 +7,75 @@ img {
 
 
 /* phone */
-body {
-  background-color: #e4e7ec;
+
+img{
+width:100px;
 }
-
-
-
+body {
+  background-color: black;
+}
+a{
+  color:gold; 
+}
 h1 {
   font-family: "SF Distant Galaxy";
+  color:gold;
 }
 
-
-
+@media screen and (max-width: 600px) {
+  .topImg{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    
+   
+   }
+   .links{
+     
+     display:flex;
+     align-items: center;
+     flex-direction: column;
+   
+   }
+   a:hover { color: #00FF00; }
+   .h{
+     display:flex;
+     justify-content: space-evenly;
+   li {
+    color: white;
+   }
+   }
+  }
 /* computer */
 @media screen and (min-width: 600px) {
-
-
+  .topImg{
+    display:flex;
+    align-self: center;
+   
+    justify-content: center;
+    
+   
+   }
+   a:hover {
+     color: #00FF00; 
+    }
+   .links{
+     
+     display:flex;
+     justify-content: space-evenly;
+   
+   }
+   .h{
+     display:flex;
+     justify-content: space-evenly;
+   
+   }
+   li {
+    color: white;
+   }
+   h2 {
+    color: white;
+   }
 
 }
 
