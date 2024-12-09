@@ -15,21 +15,44 @@ img {
 
 /* phone */
 body {
-  background-color: #e4e7ec;
+  background-color: #000000;
+}
+
+.test{
+  display:flex;
+  justify-content: center;
 }
 
 
 
 h1 {
   font-family: "SF Distant Galaxy";
+  color: yellow;
+}
+a{
+  color:yellow;
 }
 
-
+.links{
+  display:flex;
+  justify-content: space-evenly;
+}
 
 /* computer */
-@media screen and (min-width: 600px) {
+ @media screen and (max-width: 600px) {
 
-
-
+.test{
+  flex-direction: column;
+  align-items:start ;
 }
+
+.links{
+  flex-direction: column;
+}
+
+
+
+ }
+
+
 
